@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0px;
+			padding:0px;
+		}
+
+		img{
+			width:80px;
+			height:80px;
+			display: block;
+		}
+		
+		.nav{
+			position: fixed;
+			right:30px;
+			bottom:100px;
+		}
+
+		.nav li{
+			width:80px;
+			height: 80px;
+			border:1px solid red;
+			list-style: none;
+			position: relative;
+			overflow: hidden;
+		}
+		.nav li a{
+			display: block;
+			width:80px;
+			height: 80px;
+			position: absolute;
+			color:white;
+			text-align: center;
+			line-height: 80px;
+			text-decoration: none;
+			background-color: #00f;
+			transform-origin: left bottom;
+			transform: rotate(180deg);
+			transition: transform 0.5s;
+
+		}
+
+		.nav li:hover a{
+			transform: rotate(0deg);
+		}
+	</style>
+</head>
+<body>
+	<ul class="nav">
+		<li><a href="">搜藏</a><img src="1.jpg" alt=""></li>
+		<li><a href="">搜藏</a><img src="1.jpg" alt=""></li>
+		<li><a href="">搜藏</a><img src="1.jpg" alt=""></li>
+		<li><a href="">搜藏</a><img src="1.jpg" alt=""></li>
+		<li><a href="">搜藏</a><img src="1.jpg" alt=""></li>
+	</ul>
+</body>
+</html>
